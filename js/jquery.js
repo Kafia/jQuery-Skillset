@@ -1,6 +1,28 @@
 // jQuery Hover Effect//
 
 $(document).ready(function(){
+	
+var canvas = $('#mycanvas')[0];
+if (canvas.getContext){
+  var ctx = canvas.getContext('2d'); 
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(0,0);
+  ctx.lineTo(30,140);
+  ctx.stroke();
+
+var data = { x: 50, y: 50, r: 25 }; //   circle	
+	
+   ctx.beginPath();
+    ctx.arc(data.x, data.y, data.r, 0, Math.PI * 2); // 0 - 2pi is a full circle
+    ctx.fill();	
+}	
+	
+	
+	
+	
+	
+	
     $("h1.what-we-do").hover(function(){
         $(this).css("background-color", "#f16529");
 		$(this).css("text-align", "center");
