@@ -22,20 +22,7 @@ $(document).ready(function(){
         div.animate({fontSize: '3em'}, "slow");
     });
 });
-// jQuery Effect on If/Else//
 
-$(document).ready(function(){ 
-
-	var n = $("div.condition").length;
-
-	if (n < 2) {
-		$("div.condition").css("background", "green");
-	} 
-	else {
-		$("div.condition").css("background", "orange");
-	}
-
-});
 // jQuery Effect Fade To//
 $(document).ready(function(){
     $("button").click(function(){

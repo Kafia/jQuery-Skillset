@@ -7,24 +7,22 @@
 	<!--<![endif]-->
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>
 			Dgenius
 		</title>
+	<link rel="icon"   type="image/png"    href="images/favicon.ico">
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 		<!--Google Web Fonts-->
  
 		<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/normalize.min.css">
+ 
 		<link rel="stylesheet" href="css/main.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">
-		</script>
-		<script src="js/jquery.js">
 		</script>
 	</head>
 	<body>
@@ -65,8 +63,12 @@
 
 		<div class="main-container">
 			<div class="main wrapper clearfix">
-
+			<h1> Pure HTML5 and CSS3 Demo </h1>
 				<article>
+				       <header>
+                       
+                        <h3>There are CSS3 Gems all around here </h3>
+                    </header>
 	 		<section>
 				<h2> Rounded Corners </h2>
 					<p class="rcorners">
@@ -92,8 +94,8 @@
 				<section>
 				<h2>Image Transparency </h2>
 				<div class="transimg"> 
-				<img src="images/border.png" width="150" height="113" alt="border"/>
-				<img src="images/tile.png" width="150" height="113" alt="tile"/>
+				<img src="images/border.png" width="150" height="113" alt="image with border"/>
+				<img src="images/tile.png" width="150" height="113" alt="a tile image"/>
 				</div>
 				</section>
 				<section>
@@ -108,7 +110,7 @@
 							Get in touch 
 					</h2>
 					<form id="contact-form" action="/" method="post">
-		 
+						<div class="stars"><img src="images/tile.png" height="50" alt="stars"/></div>
 						<p>
 							Fill in the form below, and we'll get back to you within 24 hours.
 						</p>
@@ -153,8 +155,17 @@
 								</textarea>
 							</label>
 						</div>
-						<div>
-							<button name="submit" type="submit" id="contact-submit">
+						<div style="padding:10px 0;">
+							<label>
+								<span>
+									Subscribe to our Newsletter:
+								</span>
+								<input type="checkbox" title="We will never spam you" tabindex="6" checked="checked">
+								 
+							</label>
+						</div>
+						<div class="frmbuttons">
+							<button tabindex="7" name="submit" type="submit" id="contact-submit">
 								Send Email
 							</button>
 							<button name="cancel" type="reset" id="clear-form">
@@ -172,15 +183,15 @@
 
 		<div class="footer-container">
 			<footer class="wrapper">
-			<h3> footer </h3>
-			<div class="columns">
-			<h2> What We Do? </h2>
-			<p>Dgenius delivers data-driven strategy that boosts business performance consistently. We make data-driven decisions your biggest edge.
-			<h2> Our Process</h2> Ryze Analytics process is collaborative and not rigid. Our personalized approach is centered on adapting to each client’s distinct, evolving needs. 
-			<h2>Why Us?</h2> We are highly: Proficient - Collaborative - Driven.
+			<h3>CSS3 column example in footer.</h3>
+ 			<div class="columns">
+			<h2 > What We Do? </h2>
+			<p>Dgenius delivers data-driven strategy that boosts business performance consistently. We make data-driven decisions your biggest edge.</p>
+			<h2> Our Process</h2><p> Ryze Analytics process is collaborative and not rigid. Our personalized approach is centered on adapting to each client’s distinct, evolving needs. </p>
+			<h2>Why Us?</h2><p> We are highly: Proficient - Collaborative - Driven.
 			</p>
 			</div>
-				<a style="display:block;position: fixed; bottom:5px;right:5px;" href="#" title="Back to Top"><img style="border: none;height:100px;" alt="Back to Top" src="images/back-to-top.png"/></a>
+				<a style="display:block;position: fixed; bottom:5px;right:5px;" href="#" title="Back to Top"><img style="border: none;height:60px;" alt="Back to Top" src="images/back-to-top.png"/></a>
 			</footer>
 		</div>
 
