@@ -133,27 +133,9 @@ $(document).ready(function(){
 		}
 		
 		
-	})
-	
-//#2--- Hides and show What we do paragraph in sidebar on what we do page		
-	
-	    $("#whatwedo").click(function(){
-        	
-	       	$("p.texttohide").toggle("slow", function(){
-	       		
-	       	      	if($("p.texttohide").is(':hidden')) {
-						$("#whatwedo").val("Show Details");
-					} else {
-						$("#whatwedo").val("Hide Details");
-					}		
-	       		
-	       		
-	       	});
+	});
        	
- 	
-       	});
-       	
- //#3--  When you click on a form element, it changes the background color
+ //#2--  When you click on a form element, it changes the background color
  
   $("input,textarea").focus(function(){
         $(this).css("background-color", "rgb(245, 251, 11)");
@@ -162,7 +144,7 @@ $(document).ready(function(){
         $(this).css("background-color", "#ffffff");
     });      	
      
-//#4-- Submit button is disabled if all required fields are not filled
+//#3-- Submit button is disabled if all required fields are not filled
  $('#contact-form input:required').keyup(function() {
 
         var empty = false;
@@ -179,61 +161,10 @@ $(document).ready(function(){
             $('#contact-submit').removeAttr('disabled'); 
         	 
         }
-    });     
-     
-// jQuery Hover Effect + Chaining//
-     	
-   $("h1.what-we-do").hover(function(){
-        $(this).css("background-color", "#f16529").css("text-align", "center").css("color", "white");
-        }, function(){
-        $(this).css("background-color", "white").css("text-align", "left").css("color", "black");
-    });
-     
-     
-     
-       	
-});	
+    }); 
 
-
- 
-
-//Filtering Effect on Why us page//
-
-$(document).ready(function(){
-	$('#filter').click(function(){
-				//Filter event
-	$("section").filter(".design").css('background-color','#FCFBBC');
-		//first event
-	$('#filter').attr("src","http://placehold.it/300x300/eee/000?text=Size+Changed");
-		//second Event
-	$(".footer-img-right").css("float","left");
-		//third event
-	$(".footer-img-left").css("float","right");
-
-		 
-		
-	});
-    
-});
-
-// jQuery Effect Fade To//
-$(document).ready(function(){
-    $("button").click(function(){
-        $("#div1").fadeTo("slow", 0.15);
-        $("#div2").fadeTo("slow", 0.4);
-        $("#div3").fadeTo("slow", 0.5);
-    });
-});
-// jQuery Effect Slide Toggle//
-$(document).ready(function(){
-    $(".flip").click(function(){
-        $(this).next(".panel").slideToggle("slow");
-    });
-});
-
-
-
-(function() {
+	//Testing for form input elements
+	(function() {
 
   // Create input element for testing
   var input = document.createElement('input');
@@ -271,3 +202,70 @@ $(document).ready(function(){
   }
 
 })();
+
+//#2--- Hides and show What we do paragraph in sidebar on what we do page		
+	
+	    $("#whatwedo").click(function(){
+        	
+	       	$("p.texttohide").toggle("slow", function(){
+	       		
+	       	      	if($("p.texttohide").is(':hidden')) {
+						$("#whatwedo").val("Show Details");
+					} else {
+						$("#whatwedo").val("Hide Details");
+					}		
+	       		
+	       		
+	       	});
+       	
+ 	
+       	});    
+     
+// jQuery Hover Effect + Chaining//
+     	
+   $("h1.what-we-do").hover(function(){
+        $(this).css("background-color", "#f16529").css("text-align", "center").css("color", "white");
+        }, function(){
+        $(this).css("background-color", "white").css("text-align", "left").css("color", "black");
+    });
+     
+     });	
+
+//Filtering Effect on Why us page//
+
+$(document).ready(function(){
+	$('#filter').click(function(){
+				//Filter event
+	$("section").filter(".design").css('background-color','#FCFBBC');
+		//first event
+	$('#filter').attr("src","http://placehold.it/300x300/eee/000?text=Size+Changed");
+		//second Event
+	$(".footer-img-right").css("float","left");
+		//third event
+	$(".footer-img-left").css("float","right");
+
+		 
+		
+	});
+    
+});
+
+// jQuery Effect Slide Toggle//
+$(document).ready(function(){
+    $(".flip").click(function(){
+        $(this).next(".panel").slideToggle("slow");
+    });
+});
+
+// jQuery Effect Fade To//
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeTo("slow", 0.15);
+        $("#div2").fadeTo("slow", 0.4);
+        $("#div3").fadeTo("slow", 0.5);
+    });
+});
+
+
+
+
