@@ -201,14 +201,15 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$('#filter').click(function(){
+				//Filter event
+	$("section").filter(".design").css('background-color','#FCFBBC');
 		//first event
 	$('#filter').attr("src","http://placehold.it/300x300/eee/000?text=Size+Changed");
 		//second Event
 	$(".footer-img-right").css("float","left");
 		//third event
 	$(".footer-img-left").css("float","right");
-		//Filter event
-		 $("article").filter(".digital").hide();
+
 		 
 		
 	});
