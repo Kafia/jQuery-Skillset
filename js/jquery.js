@@ -3,6 +3,7 @@
 $(document).ready(function(){
 	
 var canvas = $('#mycanvas')[0];
+if(canvas) {
 if (canvas.getContext){
   var ctx = canvas.getContext('2d'); 
   ctx.lineWidth = 1;
@@ -17,6 +18,7 @@ var data = { x: 50, y: 50, r: 25 }; //   circle
     ctx.arc(data.x, data.y, data.r, 0, Math.PI * 2); // 0 - 2pi is a full circle
     ctx.fill();	
 }	
+}
 });
 	
 	
