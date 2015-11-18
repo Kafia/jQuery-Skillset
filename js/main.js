@@ -195,15 +195,25 @@ $(document).ready(function(){
 });	
 
 
+ 
 
-
-//Filtering//
+//Filtering Effect on Why us page//
 
 $(document).ready(function(){
-    $("p").filter(".partner").css("background-color","#f16529");
-
+	$('#filter').click(function(){
+		//first event
+	$('#filter').attr("src","http://placehold.it/300x300/eee/000?text=Size+Changed");
+		//second Event
+	$(".footer-img-right").css("float","left");
+		//third event
+	$(".footer-img-left").css("float","right");
+		//Filter event
+		 $("article").filter(".digital").hide();
+		 
+		
+	});
+    
 });
-
 
 // jQuery Effect Fade To//
 $(document).ready(function(){
