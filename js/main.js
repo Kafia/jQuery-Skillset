@@ -204,26 +204,6 @@ $(document).ready(function(){
 
 });
 
-// Focus//
-
-$(document).ready(function(){
-   
-});
- 
-	
-$(document).ready(function(){
-	
-	
-
-});
-// jQuery Click Effect//
-
-$(document).ready(function(){
-    $("button").click(function(){
-         var div = $("div.animate"); 
-		div.css("background-color","#f16529").css("color","white").animate({left: '250px',height:'100px',width:'500px'}, "slow").animate({fontSize: '3em'}, "slow");
-    });
-});
 
 // jQuery Effect Fade To//
 $(document).ready(function(){
