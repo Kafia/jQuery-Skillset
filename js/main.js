@@ -120,8 +120,11 @@ var canvas = $('#mycanvas')[0];
 
 // END CANVAS TASK
 
-
+// Jquery Interactive Elements 
 $(document).ready(function(){
+	
+//#1--- hides and shows website entry box on form at index.html	
+	
 	$('#havewebsite').change(function(){
 		if($(this).is(":checked")) {
 			$('#website').show("fadeIn");	
@@ -132,23 +135,30 @@ $(document).ready(function(){
 		
 	})
 	
+//#2--- Hides and show What we do paragraph in sidebar on what we do page		
+	
+	    $("#whatwedo").click(function(){
+        	
+	       	$("p.texttohide").toggle("slow", function(){
+	       		
+	       	      	if($("p.texttohide").is(':hidden')) {
+						$("#whatwedo").val("Show Details");
+					} else {
+						$("#whatwedo").val("Hide Details");
+					}		
+	       		
+	       		
+	       	});
+       	
+ 	
+       	});
+       	
+ //#3--       	
+       	
 });	
 
 
 
-$(document).ready(function(){
-	
-    $("#Button1").click(function(){
-        $("p.hide").hide(1000);
-        alert("The paragraph is now hidden");
-
-		if(value="show"){
-			$("#Button1").click(function(){
-				$("p.hide").show(1000);
-			})
-			}
-    });
-});
 
 //Filtering//
 
@@ -167,9 +177,7 @@ $(document).ready(function(){
         $(this).css("background-color", "#ffffff");
     });
 });
-
-// Canvas Initiate 
-
+ 
 // jQuery Hover Effect//	
 $(document).ready(function(){
 	
@@ -184,6 +192,7 @@ $(document).ready(function(){
 		$(this).css("text-align", "left");
 		$(this).css("color", "black");
     });
+});
 // jQuery Click Effect//
 
 $(document).ready(function(){
