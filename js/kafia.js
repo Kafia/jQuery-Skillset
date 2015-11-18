@@ -12,3 +12,10 @@ $(document).ready(function(){
 			}
     });
 });
+
+//Filtering//
+
+$(document).ready(function(){
+    $("p").filter(".partner").css("background-color","#f16529");
+
+});

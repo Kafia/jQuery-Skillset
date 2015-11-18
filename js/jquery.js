@@ -17,14 +17,14 @@ var data = { x: 50, y: 50, r: 25 }; //   circle
     ctx.arc(data.x, data.y, data.r, 0, Math.PI * 2); // 0 - 2pi is a full circle
     ctx.fill();	
 }	
+});
 	
 	
 	
 	
 	
-	
-    $("h1.what-we-do").hover(function(){
-        $(this).css("background-color", "#f16529");
+   $("h1.what-we-do").hover(function(){
+        $(this).css("fontSize", "20px");
 		$(this).css("text-align", "center");
 		$(this).css("color", "white");
         }, function(){
@@ -32,7 +32,6 @@ var data = { x: 50, y: 50, r: 25 }; //   circle
 		$(this).css("text-align", "left");
 		$(this).css("color", "black");
     });
-});
 // jQuery Click Effect//
 
 $(document).ready(function(){
