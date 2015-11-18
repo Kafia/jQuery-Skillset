@@ -952,6 +952,10 @@ aside {
   color:#000;
 	
 }
+#contact-form button[type="submit"]:disabled {
+	background:gray;
+	 cursor:not-allowed;
+}
 #contact-form button[type="submit"] , #contact-form button[type="reset"]{
   cursor:pointer;
   width:45%;

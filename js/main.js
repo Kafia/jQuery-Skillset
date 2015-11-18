@@ -153,7 +153,39 @@ $(document).ready(function(){
  	
        	});
        	
- //#3--       	
+ //#3--  When you click on a form element, it changes the background color
+ 
+  $("input,textarea").focus(function(){
+        $(this).css("background-color", "rgb(245, 251, 11)");
+    });
+    $("input,textarea").blur(function(){
+        $(this).css("background-color", "#ffffff");
+    });      	
+     
+//#4-- Submit button is disabled if all required fields are not filled
+ $('#contact-form input:required').keyup(function() {
+
+        var empty = false;
+        $('#contact-form  input:required').each(function() {
+            if ($(this).val() == '') {
+                empty = true;
+            }
+        });
+
+        if (empty) {
+            $('#contact-submit').attr('disabled', 'disabled'); 
+           
+        } else {
+            $('#contact-submit').removeAttr('disabled'); 
+        	 
+        }
+    });     
+     
+
+     
+     
+     
+     
        	
 });	
 
@@ -170,12 +202,7 @@ $(document).ready(function(){
 // Focus//
 
 $(document).ready(function(){
-    $("input").focus(function(){
-        $(this).css("background-color", "#cccccc");
-    });
-    $("input").blur(function(){
-        $(this).css("background-color", "#ffffff");
-    });
+   
 });
  
 // jQuery Hover Effect//	
