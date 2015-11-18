@@ -1,3 +1,335 @@
+// CANVAS Task
+
+// Canvas Initiate 
+
+$(document).ready(function(){
+  
+
+var canvas = $('#mycanvas')[0];
+if(canvas) {	
+	
+if (canvas.getContext){
+  var ctx = canvas.getContext('2d'); 
+  
+		ctx.font="20px Arial";
+		ctx.fillText("Why Us?",10,50);
+
+		ctx.font="30px Verdana";
+		// Create gradient
+		var gradient=ctx.createLinearGradient(0,0,canvas.width,0);
+		gradient.addColorStop("0","magenta");
+		gradient.addColorStop("0.5","blue");
+		gradient.addColorStop("1.0","red");
+		// Fill with gradient
+		ctx.fillStyle=gradient;
+		ctx.fillText("Proficient",10,90); 
+		ctx.fillText("Collaborative",30,120); 
+		ctx.fillText("Driven!",60,160); 
+
+
+}	
+}
+
+
+});
+// End Canvas Initiate
+
+// Clear Canvas
+
+$("#clear-canvas").click(function(){
+var canvas = $('#mycanvas')[0];
+	if(canvas) {	
+		if (canvas.getContext){
+		  var ctx = canvas.getContext('2d');	
+
+				ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+		}
+	}	
+		
+});	
+
+//Reset Canvas to Orignal State
+$("#reset-canvas").click(function(){
+var canvas = $('#mycanvas')[0];
+	if(canvas) {	
+		if (canvas.getContext){
+		  var ctx = canvas.getContext('2d');	
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+			ctx.font="20px Arial";
+			ctx.fillText("Why Us?",10,50);
+
+			ctx.font="30px Verdana";
+			// Create gradient
+			var gradient=ctx.createLinearGradient(0,0,canvas.width,0);
+			gradient.addColorStop("0","magenta");
+			gradient.addColorStop("0.5","blue");
+			gradient.addColorStop("1.0","red");
+			// Fill with gradient
+			ctx.fillStyle=gradient;
+			ctx.fillText("Proficient",10,90); 
+			ctx.fillText("Collaborative",30,120); 
+			ctx.fillText("Driven!",60,160); 
+
+		}
+	}	
+		
+});	
+
+// Draw Triangle on Canvas
+$("#drawTriangle").click(function(){
+var canvas = $('#mycanvas')[0];
+	if(canvas) {	
+		if (canvas.getContext){
+		  var ctx = canvas.getContext('2d');	
+ 
+          ctx.beginPath();
+          ctx.moveTo(50, 50);
+          ctx.lineTo(50, 125);
+          ctx.lineTo(150, 125);
+          ctx.closePath();
+          ctx.stroke();
+
+		}
+	}	
+		
+});	
+
+//Draw Polygon on Canvas
+$("#drawPolygon").click(function(){
+var canvas = $('#mycanvas')[0];
+	if(canvas) {	
+		if (canvas.getContext){
+		  var ctx = canvas.getContext('2d');	
+ 
+          	ctx.beginPath();
+            ctx.moveTo(75, 50);
+            ctx.lineTo(175, 50);
+            ctx.lineTo(200, 75);
+            ctx.lineTo(175, 100);
+            ctx.lineTo(75, 100);
+            ctx.lineTo(50, 75);
+            ctx.closePath();
+            ctx.fillStyle = "rgb(200,0,0)";
+            ctx.fill();
+
+		}
+	}	
+		
+});	
+
+// END CANVAS TASK
+
+
+$(document).ready(function(){
+	$('#havewebsite').change(function(){
+		if($(this).is(":checked")) {
+			$('#website').show("fadeIn");	
+		} else {
+			$('#website').hide("fadeOut");	
+		}
+		
+		
+	})
+	
+});	
+
+$(document).ready(function(){
+	
+    $("#Button1").click(function(){
+        $("p.hide").hide(1000);
+        alert("The paragraph is now hidden");
+
+		if(value="show"){
+			$("#Button1").click(function(){
+				$("p.hide").show(1000);
+			})
+			}
+    });
+});
+
+//Filtering//
+
+$(document).ready(function(){
+    $("p").filter(".partner").css("background-color","#f16529");
+
+});
+
+// Focus//
+
+$(document).ready(function(){
+    $("input").focus(function(){
+        $(this).css("background-color", "#cccccc");
+    });
+    $("input").blur(function(){
+        $(this).css("background-color", "#ffffff");
+    });
+});
+
+// Canvas Initiate 
+
+$(document).ready(function(){
+  
+
+var canvas = $('#mycanvas')[0];
+if(canvas) {	
+	
+if (canvas.getContext){
+  var ctx = canvas.getContext('2d'); 
+  
+ctx.font="20px Arial";
+ctx.fillText("Why Us?",10,50);
+
+ctx.font="30px Verdana";
+// Create gradient
+var gradient=ctx.createLinearGradient(0,0,canvas.width,0);
+gradient.addColorStop("0","magenta");
+gradient.addColorStop("0.5","blue");
+gradient.addColorStop("1.0","red");
+// Fill with gradient
+ctx.fillStyle=gradient;
+ctx.fillText("Proficient",10,90); 
+ctx.fillText("Collaborative",30,120); 
+ctx.fillText("Driven!",60,160); 
+
+
+}	
+}
+
+
+});
+// End Canvas Initiate
+
+// Clear Canvas
+
+$("#clear-canvas").click(function(){
+var canvas = $('#mycanvas')[0];
+	if(canvas) {	
+		if (canvas.getContext){
+		  var ctx = canvas.getContext('2d');	
+
+				ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+		}
+	}	
+		
+});	
+
+//Reset Canvas to Orignal State
+$("#reset-canvas").click(function(){
+var canvas = $('#mycanvas')[0];
+	if(canvas) {	
+		if (canvas.getContext){
+		  var ctx = canvas.getContext('2d');	
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+			ctx.font="20px Arial";
+			ctx.fillText("Why Us?",10,50);
+
+			ctx.font="30px Verdana";
+			// Create gradient
+			var gradient=ctx.createLinearGradient(0,0,canvas.width,0);
+			gradient.addColorStop("0","magenta");
+			gradient.addColorStop("0.5","blue");
+			gradient.addColorStop("1.0","red");
+			// Fill with gradient
+			ctx.fillStyle=gradient;
+			ctx.fillText("Proficient",10,90); 
+			ctx.fillText("Collaborative",30,120); 
+			ctx.fillText("Driven!",60,160); 
+
+		}
+	}	
+		
+});	
+
+// Draw Triangle on Canvas
+$("#drawTriangle").click(function(){
+var canvas = $('#mycanvas')[0];
+	if(canvas) {	
+		if (canvas.getContext){
+		  var ctx = canvas.getContext('2d');	
+ 
+          ctx.beginPath();
+          ctx.moveTo(50, 50);
+          ctx.lineTo(50, 125);
+          ctx.lineTo(150, 125);
+          ctx.closePath();
+          ctx.stroke();
+
+		}
+	}	
+		
+});	
+
+//Draw Polygon on Canvas
+$("#drawPolygon").click(function(){
+var canvas = $('#mycanvas')[0];
+	if(canvas) {	
+		if (canvas.getContext){
+		  var ctx = canvas.getContext('2d');	
+ 
+          	ctx.beginPath();
+            ctx.moveTo(75, 50);
+            ctx.lineTo(175, 50);
+            ctx.lineTo(200, 75);
+            ctx.lineTo(175, 100);
+            ctx.lineTo(75, 100);
+            ctx.lineTo(50, 75);
+            ctx.closePath();
+            ctx.fillStyle = "rgb(200,0,0)";
+            ctx.fill();
+
+		}
+	}	
+		
+});	
+
+
+
+
+
+// jQuery Hover Effect//	
+	
+	
+	
+	
+   $("h1.what-we-do").hover(function(){
+        $(this).css("background-color", "#f16529");
+		$(this).css("text-align", "center");
+		$(this).css("color", "white");
+        }, function(){
+        $(this).css("background-color", "white");
+		$(this).css("text-align", "left");
+		$(this).css("color", "black");
+    });
+// jQuery Click Effect//
+
+$(document).ready(function(){
+    $("button").click(function(){
+         var div = $("div.animate"); 
+		div.css("background-color","#f16529");
+		div.css("color","white");
+        div.animate({left: '250px',height:'100px',width:'500px'}, "slow");
+        div.animate({fontSize: '3em'}, "slow");
+    });
+});
+
+// jQuery Effect Fade To//
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeTo("slow", 0.15);
+        $("#div2").fadeTo("slow", 0.4);
+        $("#div3").fadeTo("slow", 0.5);
+    });
+});
+// jQuery Effect Slide Toggle//
+$(document).ready(function(){
+    $(".flip").click(function(){
+        $(".panel").slideToggle("slow");
+    });
+});
+
+
 
 (function() {
 

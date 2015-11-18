@@ -25,9 +25,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">
 		</script>
-		<script src="js/kafia.js"></script>
-		<script src="js/jquery.js">
-		</script>
+
 	</head>
 	<body>
 		<!--[if lt IE 8]>
@@ -145,9 +143,17 @@
 						<div>
 							<label>
 								<span>
-									Website: (required)
+									Do you have a Website?
 								</span>
-								<input placeholder="Begin with http://" type="url" tabindex="4" required>
+								<input id="havewebsite" type="checkbox" title="Have a website" tabindex="4"     >
+							</label>
+						</div>
+						<div id="website" style="display: none;">
+							<label>
+								<span>
+									Website URL:  
+								</span>
+								<input placeholder="Begin with http://" type="url" tabindex="5"  >
 							</label>
 						</div>
 						<div>
@@ -155,7 +161,7 @@
 								<span>
 									Message: (required)
 								</span>
-								<textarea placeholder="Include all the details you can" tabindex="5" required>
+								<textarea placeholder="Include all the details you can" tabindex="6" required>
 								</textarea>
 							</label>
 						</div>
@@ -164,12 +170,12 @@
 								<span>
 									Subscribe to our Newsletter:
 								</span>
-								<input type="checkbox" title="We will never spam you" tabindex="6" checked="checked">
+								<input type="checkbox" title="We will never spam you" tabindex="7" checked="checked">
 								 
 							</label>
 						</div>
 						<div class="frmbuttons">
-							<button tabindex="7" name="submit" type="submit" id="contact-submit">
+							<button tabindex="8" name="submit" type="submit" id="contact-submit">
 								Send Email
 							</button>
 							<button name="cancel" type="reset" id="clear-form">
@@ -204,9 +210,9 @@
 		<script>
 			window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
 		</script>
-
-		<script src="js/main.js">
-		</script>
+ 
+		<script src="js/main.js"></script>
+ 
 
 
 	</body>

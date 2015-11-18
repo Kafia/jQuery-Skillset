@@ -23,9 +23,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js">
 		</script>
-		<script src="js/kafia.js"></script>
-		<script src="js/jquery.js">
-		</script>
+
 	</head>
     <body>
         <!--[if lt IE 8]>
@@ -84,7 +82,14 @@
                 <aside>
                      <h2>Why Us?</h2>
                      <p>We are highly: Proficient - Collaborative - Driven </p>
-                 <canvas id="mycanvas" width="200" height="100"></canvas>
+                     <h2>Canvas Example</h2>
+                     
+                     <button class="btn btn-success"  id="drawPolygon">Draw Polygon</button>
+                     <button class="btn btn-success"  id="drawTriangle">Draw Triangle</button>
+                     
+                 <canvas id="mycanvas" style="border:1px solid gray;background:whitesmoke;" width="250" height="200"></canvas>
+                 <button class="btn btn-info"  id="clear-canvas">Clear</button>
+                 <button class="btn btn-info"  id="reset-canvas">Reset</button>
                  </aside>
 
             </div> <!-- #main -->
@@ -111,8 +116,6 @@
 			window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
 		</script>
 
-		<script src="js/main.js">
-		</script>
-		
+		<script src="js/main.js"></script>
     </body>
 </html>
