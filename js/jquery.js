@@ -24,7 +24,7 @@ var data = { x: 50, y: 50, r: 25 }; //   circle
 	
 	
    $("h1.what-we-do").hover(function(){
-        $(this).css("fontSize", "20px");
+        $(this).css("background-color", "#f16529");
 		$(this).css("text-align", "center");
 		$(this).css("color", "white");
         }, function(){
