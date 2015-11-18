@@ -19,3 +19,14 @@ $(document).ready(function(){
     $("p").filter(".partner").css("background-color","#f16529");
 
 });
+
+// Focus//
+
+$(document).ready(function(){
+    $("input").focus(function(){
+        $(this).css("background-color", "#cccccc");
+    });
+    $("input").blur(function(){
+        $(this).css("background-color", "#ffffff");
+    });
+});
