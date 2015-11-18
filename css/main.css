@@ -675,13 +675,18 @@ Slide Toggle Effect
 .panel, .flip {
     padding: 5px;
     text-align: center;
-    background-color: #e5eecc;
+  	background:white;
     border: solid 1px #c3c3c3;
+	color:#F16529;
 }
 
 .panel {
-    padding: 50px;
+    padding: 10px;
     display: none;
+    font-size:14px;
+    text-align: justify;
+    color:white;
+    background-color: #F16529!important;
 }
 
 input[type="Button"]{

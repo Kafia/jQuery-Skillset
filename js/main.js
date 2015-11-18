@@ -243,7 +243,7 @@ $(document).ready(function(){
 // jQuery Effect Slide Toggle//
 $(document).ready(function(){
     $(".flip").click(function(){
-        $(".panel").slideToggle("slow");
+        $(this).next(".panel").slideToggle("slow");
     });
 });
 
