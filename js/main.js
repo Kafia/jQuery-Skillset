@@ -134,6 +134,8 @@ $(document).ready(function(){
 	
 });	
 
+
+
 $(document).ready(function(){
 	
     $("#Button1").click(function(){
@@ -168,128 +170,8 @@ $(document).ready(function(){
 
 // Canvas Initiate 
 
-$(document).ready(function(){
-  
-
-var canvas = $('#mycanvas')[0];
-if(canvas) {	
-	
-if (canvas.getContext){
-  var ctx = canvas.getContext('2d'); 
-  
-ctx.font="20px Arial";
-ctx.fillText("Why Us?",10,50);
-
-ctx.font="30px Verdana";
-// Create gradient
-var gradient=ctx.createLinearGradient(0,0,canvas.width,0);
-gradient.addColorStop("0","magenta");
-gradient.addColorStop("0.5","blue");
-gradient.addColorStop("1.0","red");
-// Fill with gradient
-ctx.fillStyle=gradient;
-ctx.fillText("Proficient",10,90); 
-ctx.fillText("Collaborative",30,120); 
-ctx.fillText("Driven!",60,160); 
-
-
-}	
-}
-
-
-});
-// End Canvas Initiate
-
-// Clear Canvas
-
-$("#clear-canvas").click(function(){
-var canvas = $('#mycanvas')[0];
-	if(canvas) {	
-		if (canvas.getContext){
-		  var ctx = canvas.getContext('2d');	
-
-				ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-		}
-	}	
-		
-});	
-
-//Reset Canvas to Orignal State
-$("#reset-canvas").click(function(){
-var canvas = $('#mycanvas')[0];
-	if(canvas) {	
-		if (canvas.getContext){
-		  var ctx = canvas.getContext('2d');	
- 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-			ctx.font="20px Arial";
-			ctx.fillText("Why Us?",10,50);
-
-			ctx.font="30px Verdana";
-			// Create gradient
-			var gradient=ctx.createLinearGradient(0,0,canvas.width,0);
-			gradient.addColorStop("0","magenta");
-			gradient.addColorStop("0.5","blue");
-			gradient.addColorStop("1.0","red");
-			// Fill with gradient
-			ctx.fillStyle=gradient;
-			ctx.fillText("Proficient",10,90); 
-			ctx.fillText("Collaborative",30,120); 
-			ctx.fillText("Driven!",60,160); 
-
-		}
-	}	
-		
-});	
-
-// Draw Triangle on Canvas
-$("#drawTriangle").click(function(){
-var canvas = $('#mycanvas')[0];
-	if(canvas) {	
-		if (canvas.getContext){
-		  var ctx = canvas.getContext('2d');	
- 
-          ctx.beginPath();
-          ctx.moveTo(50, 50);
-          ctx.lineTo(50, 125);
-          ctx.lineTo(150, 125);
-          ctx.closePath();
-          ctx.stroke();
-
-		}
-	}	
-		
-});	
-
-//Draw Polygon on Canvas
-$("#drawPolygon").click(function(){
-var canvas = $('#mycanvas')[0];
-	if(canvas) {	
-		if (canvas.getContext){
-		  var ctx = canvas.getContext('2d');	
- 
-          	ctx.beginPath();
-            ctx.moveTo(75, 50);
-            ctx.lineTo(175, 50);
-            ctx.lineTo(200, 75);
-            ctx.lineTo(175, 100);
-            ctx.lineTo(75, 100);
-            ctx.lineTo(50, 75);
-            ctx.closePath();
-            ctx.fillStyle = "rgb(200,0,0)";
-            ctx.fill();
-
-		}
-	}	
-		
-});	
-
-
-
-
-
 // jQuery Hover Effect//	
-	
+$(document).ready(function(){
 	
 	
 	
